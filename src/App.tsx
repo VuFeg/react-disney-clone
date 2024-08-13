@@ -3,7 +3,7 @@ import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div className="max-w-[1280px]">
+    <div className="max-w-[1280px] mx-auto">
       <Header />
     </div>
   );
