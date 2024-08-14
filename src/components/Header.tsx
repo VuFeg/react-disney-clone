@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, ReactNode } from "react";
 import logo from "./../assets/images/logo.png";
 import avatar from "./../assets/images/avatar.png";
 import {
@@ -9,7 +9,6 @@ import {
   HiTv,
 } from "react-icons/hi2";
 import { HiPlus, HiDotsVertical } from "react-icons/hi";
-import { ReactNode } from "react";
 import { HeaderItem } from "./HeaderItem";
 
 export const Header = () => {

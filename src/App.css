@@ -1,5 +1,6 @@
 #root {
-  width: 100%;
+  width: 1280px;
+  margin: 0 auto;
 }
 
 /* Reset CSS */
@@ -12,6 +13,7 @@
 
 html,
 body {
+  overflow-x: hidden;
   height: 100%;
   font-family: Arial, sans-serif;
 }
