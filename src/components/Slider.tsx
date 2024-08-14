@@ -7,7 +7,6 @@ const screenWidth = window.innerWidth;
 
 export const Slider = () => {
   const elementRef = useRef<HTMLDivElement | null>(null);
-  console.log(elementRef);
   interface Movie {
     backdrop_path: string;
   }
