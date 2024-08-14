@@ -30,22 +30,22 @@ export const Slider = () => {
   };
 
   return (
-    <div className="">
+    <div className="relative">
       <HiChevronLeft
-        className="hidden md:block text-white text-3xl absolute mt-[192px] mx-5 -translate-y-1/2 
+        className="hidden md:block text-white text-3xl absolute top-1/2 mx-5 -translate-y-1/2 
       cursor-pointer bg-transparent"
         onClick={() => elementRef.current && scrollLeft(elementRef.current)}
       />
       <HiChevronRight
-        className="hidden md:block text-white text-3xl absolute mt-[192px] mx-5 -translate-y-1/2 
-        cursor-pointer right-20 bg-transparent "
+        className="hidden md:block text-white text-3xl absolute top-1/2 mx-5 -translate-y-1/2 
+        cursor-pointer right-0 bg-transparent "
         onClick={() => elementRef.current && scrollRight(elementRef.current)}
       />
       <div
         className="flex overflow-x-auto px-16 py-4 scrollbar-none scroll-smooth"
         ref={elementRef}
       >
-        {movieList.map((item: Movie, index) => (
+        {movieList.map((item: Movie) => (
           <img
             src={IMAGE_BASE_URL + item.backdrop_path}
             alt=""
